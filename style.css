@@ -23,6 +23,16 @@ body
   display: flex;
   margin-bottom:60px;
 }
+
+.texticon-hero a
+{
+  background-color: #E02C6D;
+  color:white;
+  width: 130px;
+  padding:4px;
+  text-decoration: none;
+
+}
 .hero-text
 {
   margin-top:5%;
@@ -164,15 +174,17 @@ main{
   font-size: 48px;
 }
 
-.texticon
+.texticon a
 {
   background-color: #E02C6D;
   color:white;
   width: 130px;
   padding:4px;
+  text-decoration: none;
   
 
 }
+
 .half-width img
 {
   width: 567px;
@@ -230,6 +242,87 @@ color:#E02C6D;
 }
 
 
+/* contact form and address */
+
+
+.contact-container
+{
+  display: flex;
+  width: 100%;
+  margin-top:50px;
+  
+}
+
+.half-one
+{
+  width: 50%;
+  
+}
+
+.address-text-icon
+{
+  font-size: 30px;
+  color:white;
+  background-color:#E02C6D ;
+  padding: 5px;
+  font-weight: 600;
+  width:200px;
+}
+.contact-info
+{
+  color:rgb(255, 255, 255);
+  font-size:20px;
+}
+.contact{
+  background-color: #E02C6D;
+  color:rgb(255, 255, 255);
+  font-weight: 400;
+  padding-left:50px;
+  margin-right:152px;
+ 
+  
+  
+
+}
+.button-submit
+{
+  background-color: white;
+  text-decoration: none;
+  color:#E02C6D;
+  font-weight: 400;
+  padding: 1px 10px;
+  
+}
+
+#submit
+{
+  margin-top:20px;
+}
+
+#submit:hover  .button-submit
+{
+  background-color:#2D25A0 ;
+  color:#E02C6D;
+}
+.section-title
+{
+  color:white;
+  font-size:35px;
+  font-weight: 600;
+  text-align: center;
+}
+
+
+.address 
+{
+  margin-left:15%;
+  margin-top:5%;
+}
+.address p
+{
+  font-size: 22px;
+  font-weight: 400;
+}
 /* social media and football logo */
 
 .footer
@@ -360,7 +453,24 @@ color:#E02C6D;
     width:430px;
   }
 
+  .hero-container:hover #ball
+{
+  transform: rotate(36000deg) ;
+  transition: transform 50s ease-in;
+}
 
+/* contact and address */
+
+.contact-container
+{
+  display: flex;
+  flex-direction: column;
+}
+.contact
+{
+  margin-left:30px;
+  padding-bottom: 10px;
+}
 }
 
 /* media queries for tab */
@@ -416,10 +526,18 @@ label
 
  /* hero container */
 
+
+ .hero-container:hover #ball
+{
+  transform: rotate(36000deg) ;
+  transition: transform 50s ease-in;
+}
  .hero-container
  {
    flex-direction: column;
  }
+
+ /* container part start from here  */
   .container
   {
     width: 100%;
