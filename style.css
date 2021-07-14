@@ -514,7 +514,7 @@ label
   display: block;
   border-bottom: 1px solid lightgray;
   margin:0;
-  background-color:#2D25A0;
+  background-color:#5245ff;
   width: 100%;
   overflow: visible;
 }
@@ -571,4 +571,29 @@ label
     
     flex-direction: column;
   }
+}
+
+/* large device  */
+
+@media only screen  and (min-width: 1500px)
+
+{
+
+  #ball
+  {
+    width:100px;
+    height: auto;
+    position: relative;
+    bottom:240px;
+    
+    
+  }
+  
+  .hero-container:hover #ball
+  {
+    transform: rotate(36000deg) ;
+    transition: transform 50s ease-in;
+  }
+
+
 }
